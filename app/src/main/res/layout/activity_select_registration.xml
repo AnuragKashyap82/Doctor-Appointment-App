@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".SelectRegistrationActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:layout_marginEnd="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:orientation="vertical">
+
+        <ImageView
+            android:id="@+id/logo"
+            android:layout_width="150dp"
+            android:layout_height="150dp"
+            android:layout_gravity="center"
+            android:src="@drawable/doctor" />
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/nuniti_bold"
+            android:gravity="center"
+            android:text="Welcome to this Application"
+            android:textColor="@color/black"
+            android:textSize="25sp" />
+
+        <TextView
+            android:id="@+id/title2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="12dp"
+            android:text="Select One"
+            android:textAllCaps="false"
+            android:layout_marginTop="8dp"
+            android:textSize="16sp"
+            android:textStyle="bold"
+            android:layout_gravity="center"
+            android:fontFamily="@font/nuniti_bold"
+            android:textColor="@color/black"/>
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="20dp"
+            android:layout_marginTop="20dp"
+            android:orientation="vertical">
+
+
+            <Button
+                android:id="@+id/patientRegistrationBtn"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="Patient Registration"
+                android:background="@drawable/buttons_design"
+                android:textAllCaps="false"
+                android:fontFamily="@font/nuniti_bold"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"/>
+
+            <Button
+                android:id="@+id/doctorRegistrationBtn"
+                android:layout_width="match_parent"
+                android:layout_height="52dp"
+                android:text="Doctor Registration"
+                android:background="@drawable/buttons_design"
+                android:textAllCaps="false"
+                android:fontFamily="@font/nuniti_bold"
+                android:layout_marginTop="20dp"
+                android:layout_gravity="center"
+                android:textColor="@color/white"/>
+
+
+
+            <TextView
+                android:id="@+id/alreadyAccountTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="12dp"
+                android:text="Already have an account? Login"
+                android:textAllCaps="false"
+                android:layout_marginTop="20dp"
+                android:textSize="16sp"
+                android:layout_gravity="center"
+                android:fontFamily="@font/nuniti_bold"
+                android:textColor="@color/black"/>
+
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

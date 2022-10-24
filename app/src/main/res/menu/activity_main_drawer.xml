@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="My Activity">
+        <menu>
+            <item
+                android:id="@+id/navAppointment"
+                android:title="Patient Appointment"
+                android:icon="@drawable/ic_myfeed"/>
+
+            <item
+                android:id="@+id/navAllUsers"
+                android:title="All App Users"
+                android:icon="@drawable/ic_people"/>
+
+            <item
+                android:id="@+id/navPatients"
+                android:title="Patients"
+                android:icon="@drawable/patient"/>
+
+            <item
+                android:id="@+id/navDoctors"
+                android:title="Doctors"
+                android:icon="@drawable/doctor"/>
+
+            <item
+                android:id="@+id/navProfile"
+                android:title="My Profile"
+                android:icon="@drawable/ic_profile"/>
+
+            <item
+                android:id="@+id/navNotifications"
+                android:title="Notifications"
+                android:icon="@drawable/ic_notifications"/>
+
+        </menu>
+    </item>
+
+    <item android:title="Communicate">
+        <menu>
+            <item
+                android:id="@+id/navAboutApp"
+                android:icon="@drawable/ic_about"
+                android:title="About" />
+            <item
+                android:id="@+id/navShare"
+                android:icon="@drawable/ic_share"
+                android:title="Share This App"/>
+            <item
+                android:id="@+id/navRate"
+                android:icon="@drawable/ic_rate"
+                android:title="Rate On Google Play"/>
+        </menu>
+    </item>
+
+
+
+    <item android:title="Sign Out">
+        <menu>
+            <item
+                android:id="@+id/navLogout"
+                android:title="Logout"
+                android:icon="@drawable/ic_logout"/>
+        </menu>
+    </item>
+
+</menu>

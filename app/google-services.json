@@ -1,0 +1,39 @@
+{
+  "project_info": {
+    "project_number": "348440366643",
+    "project_id": "medicalservice-8eec6",
+    "storage_bucket": "medicalservice-8eec6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:348440366643:android:db82d44b0f978c87aa1d46",
+        "android_client_info": {
+          "package_name": "kashyap.anurag.medicalservice"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "348440366643-konl1ufta9pi75hb3l59mb6nncveedgu.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBXGvCrW3CMoDa7JfASI0wWRe1BIZ-boog"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "348440366643-konl1ufta9pi75hb3l59mb6nncveedgu.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

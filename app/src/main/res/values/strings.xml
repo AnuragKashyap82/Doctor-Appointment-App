@@ -1,0 +1,43 @@
+<resources>
+    <string name="app_name">MedicalService</string>
+
+    <string name="title_activity_main">MainActivity</string>
+
+    <string name="navigation_drawer_open">Open navigation drawer</string>
+
+    <string name="navigation_drawer_close">Close navigation drawer</string>
+    <string name="nav_header_title">Android Studio</string>
+    <string name="nav_header_subtitle">android.studio@android.com</string>
+    <string name="nav_header_desc">Navigation header</string>
+    <string name="action_settings">Settings</string>
+    <string name="menu_home">Home</string>
+    <string name="menu_gallery">Gallery</string>
+    <string name="menu_slideshow">Slideshow</string>
+
+    <string-array name="timeFrames">
+        <item>Select time you are available</item>
+        <item>8 - 10 AM</item>
+        <item>10 - 12 PM</item>
+        <item>12 - 2 PM</item>
+        <item>2 - 4 PM</item>
+        <item>4 - 6 PM</item>
+    </string-array>
+    <string-array name="departments">
+        <item>Select Department</item>
+        <item>Dentistry</item>
+        <item>Dentistry</item>
+        <item>Dentistry</item>
+        <item>Surgery</item>
+        <item>Surgery</item>
+        <item>Surgery</item>
+    </string-array>
+    <string-array name="specialization">
+        <item>Select Specialization</item>
+        <item>General</item>
+        <item>Periodontist</item>
+        <item>Periodontist</item>
+        <item>Periodontist</item>
+    </string-array>
+
+
+</resources>

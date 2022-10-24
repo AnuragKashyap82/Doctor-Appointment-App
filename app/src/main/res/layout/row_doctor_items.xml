@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:id="@+id/doctorIv"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_marginBottom="8dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:src="@drawable/doctor"
+        app:civ_border_color="@color/colorPrimary"
+        app:civ_border_width="1dp" />
+
+    <TextView
+        android:id="@+id/nameTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/doctorIv"
+        android:layout_marginStart="12dp"
+        android:layout_toStartOf="@id/appointBtn"
+        android:layout_marginEnd="4dp"
+        android:text="Anurag kashyap"
+        android:maxLines="1"
+        android:textColor="@color/colorPrimary"
+        android:textStyle="bold"
+        android:fontFamily="@font/nuniti_bold"
+        android:textSize="16dp"
+        android:layout_marginTop="12dp"/>
+
+    <TextView
+        android:id="@+id/emailTv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_toEndOf="@id/doctorIv"
+        android:layout_marginStart="12dp"
+        android:text="Anurag kashyap"
+        android:layout_toStartOf="@id/appointBtn"
+        android:layout_marginEnd="4dp"
+        android:maxLines="1"
+        android:textColor="@color/colorPrimary"
+        android:layout_below="@id/nameTv"
+        android:fontFamily="@font/nunito_light"
+        android:textSize="16dp"
+        android:layout_marginTop="8dp"/>
+
+    <Button
+        android:id="@+id/appointBtn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_centerVertical="true"
+        android:layout_marginEnd="8dp"
+        android:textSize="14sp"
+        android:text="Appoint"
+        android:textAllCaps="false"
+        android:fontFamily="@font/nuniti_bold"
+        android:background="@drawable/buttons2"/>
+
+</RelativeLayout>

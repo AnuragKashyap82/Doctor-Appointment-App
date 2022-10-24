@@ -1,0 +1,275 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:layout_marginStart="5dp"
+    android:layout_marginEnd="5dp"
+    android:layout_marginTop="3dp"
+    android:layout_marginBottom="2dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+
+    <com.google.android.material.card.MaterialCardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        app:cardCornerRadius="15dp"
+        android:background="@color/white"
+        android:elevation="5dp">
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/dateTv"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="8dp"
+                android:layout_marginEnd="8dp"
+                android:layout_marginStart="8dp"
+                android:layout_marginTop="8dp"
+                android:paddingStart="4dp"
+                android:fontFamily="@font/nuniti_bold"
+                android:text="date"
+                android:textColor="@color/colorPrimary"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+
+            <ImageView
+                android:id="@+id/moreBtn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_more"
+                android:layout_alignParentEnd="true"
+                android:padding="12dp"/>
+
+            <RelativeLayout
+                android:id="@+id/patientRl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/moreBtn">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/patientImage"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    app:civ_border_width="1dp"
+                    app:civ_border_color="@color/white"
+                    android:src="@drawable/patient"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:id="@+id/details"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/nuniti_bold"
+                    android:textStyle="bold"
+                    android:layout_toEndOf="@id/patientImage"
+                    android:text="Patient Details"
+                    android:layout_marginStart="16dp"
+                    android:textSize="18dp"/>
+
+                <TextView
+                    android:id="@+id/patientNameTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/nuniti_bold"
+                    android:textStyle="bold"
+                    android:layout_toEndOf="@id/patientImage"
+                    android:text="name"
+                    android:layout_below="@id/details"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="16dp"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:id="@+id/emailTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/nuniti_bold"
+                    android:layout_toEndOf="@id/patientImage"
+                    android:text="email"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@id/patientNameTv"
+                    android:layout_marginStart="16dp"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/phoneNoTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/nuniti_bold"
+                    android:layout_toEndOf="@id/patientImage"
+                    android:text="phoneNo"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@id/emailTv"
+                    android:layout_marginStart="16dp"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/problemTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/nuniti_bold"
+                    android:layout_toEndOf="@id/patientImage"
+                    android:text="problem"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@id/phoneNoTv"
+                    android:layout_marginStart="16dp"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/departmentTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/nuniti_bold"
+                    android:layout_toEndOf="@id/patientImage"
+                    android:text="Department"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@id/problemTv"
+                    android:layout_marginStart="16dp"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/specializationTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/nuniti_bold"
+                    android:layout_toEndOf="@id/patientImage"
+                    android:text="Specialization"
+                    android:layout_marginBottom="10dp"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@id/departmentTv"
+                    android:layout_marginStart="16dp"
+                    android:textSize="14sp"/>
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:id="@+id/doctorRl"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:visibility="visible"
+                android:layout_below="@id/patientRl">
+
+                <de.hdodenhof.circleimageview.CircleImageView
+                    android:id="@+id/doctorImage"
+                    android:layout_width="90dp"
+                    android:layout_height="90dp"
+                    app:civ_border_width="1dp"
+                    app:civ_border_color="@color/white"
+                    android:src="@drawable/doctor"
+                    android:layout_marginTop="45dp"
+                    android:layout_marginStart="8dp"
+                    android:layout_marginBottom="8dp"/>
+
+                <TextView
+                    android:id="@+id/drDetails"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/nuniti_bold"
+                    android:textStyle="bold"
+                    android:layout_toEndOf="@id/doctorImage"
+                    android:text="Doctor Details"
+                    android:layout_marginStart="16dp"
+                    android:textSize="18dp"/>
+
+                <TextView
+                    android:id="@+id/doctorNameTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/nuniti_bold"
+                    android:textStyle="bold"
+                    android:layout_toEndOf="@id/doctorImage"
+                    android:text="name"
+                    android:layout_below="@id/drDetails"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="16dp"
+                    android:textSize="16dp"/>
+
+                <TextView
+                    android:id="@+id/doctorEmailTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/nuniti_bold"
+                    android:layout_toEndOf="@id/doctorImage"
+                    android:text="email"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@id/doctorNameTv"
+                    android:layout_marginStart="16dp"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/doctorPhoneNoTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/nuniti_bold"
+                    android:layout_toEndOf="@id/doctorImage"
+                    android:text="phoneNo"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@id/doctorEmailTv"
+                    android:layout_marginStart="16dp"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/doctorDepartmentTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/nuniti_bold"
+                    android:layout_toEndOf="@id/doctorImage"
+                    android:text="Department"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@id/doctorPhoneNoTv"
+                    android:layout_marginStart="16dp"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/doctorSpecializationTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:fontFamily="@font/nuniti_bold"
+                    android:layout_toEndOf="@id/doctorImage"
+                    android:text="Specialization"
+                    android:layout_marginTop="8dp"
+                    android:layout_below="@id/doctorDepartmentTv"
+                    android:layout_marginStart="16dp"
+                    android:textSize="14sp"/>
+
+                <TextView
+                    android:id="@+id/appointmentTimeDateTv"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/doctorSpecializationTv"
+                    android:textSize="16dp"
+                    android:textColor="@color/colorPrimary"
+                    android:textStyle="bold"
+                    android:layout_marginBottom="10dp"
+                    android:fontFamily="@font/nuniti_bold"
+                    android:text="Appointment on: Dec 22, 2022 at 2 - 4 PM"
+                    android:layout_centerHorizontal="true"
+                    android:layout_marginTop="10dp"/>
+
+            </RelativeLayout>
+
+
+        </RelativeLayout>
+
+    </com.google.android.material.card.MaterialCardView>
+
+
+</RelativeLayout>
