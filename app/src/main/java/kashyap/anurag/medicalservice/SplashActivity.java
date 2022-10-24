@@ -24,7 +24,7 @@ public class SplashActivity extends AppCompatActivity {
             @Override
             public void run() {
                 checkUsers();            }
-        }, 500);
+        }, 3000);
     }
 
     private void checkUsers() {
